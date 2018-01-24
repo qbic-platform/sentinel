@@ -31,7 +31,8 @@ Make sure the local Qbic daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/qbicpay/sentinel.git && cd sentinel
+    $ git clone https://github.com/qbic-platform/sentinel.git & cd sentinel
+    $ mkdir database
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
@@ -64,5 +65,3 @@ An alternative (non-default) path to the `qbic.conf` file can be specified in `s
 To view debug output, set the `SENTINEL_DEBUG` environment variable to anything non-zero, then run the script manually:
 
     $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py
-
-
